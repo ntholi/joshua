@@ -14,6 +14,6 @@ while True:
     i = random.randint(0, len(lines) - 1)
     body, title = lines[i].split("(")
     title = title.replace(")", "")
-    toast(title, body)
+    toast(title, body, duration="long")
     print("- {0:s} ({1:s})".format(body, title))
-    time.sleep(3)
+    time.sleep(33)
